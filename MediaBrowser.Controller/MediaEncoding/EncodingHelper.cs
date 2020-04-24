@@ -452,7 +452,7 @@ namespace MediaBrowser.Controller.MediaEncoding
                     .Append(" -vaapi_device ")
                     .Append(encodingOptions.VaapiDevice)
                     // Fix for portrait mode iOS videos not playing with vaapi acceleration
-                    .Append(' -autorotate 0 ');
+                    .Append(" -autorotate 0 ");
             }
 
             if (state.IsVideoRequest
